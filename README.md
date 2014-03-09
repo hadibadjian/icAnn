@@ -58,5 +58,5 @@ brew install ghostscript
 [Homebrew]:http://brew.sh/
 [Icon-76@2x]:https://raw.github.com/hadibadjian/icAnn/master/icAnn/Icons/Icon-76@2x.png?raw=true
 [Icon-76]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-76.png?raw=true
-[Icon-72@2x]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72@2x.png?raw=true
+[Icon-72@2x]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72@2X.png?raw=true
 [Icon-72]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png?raw=true
