@@ -15,7 +15,7 @@ sections of application icons.
 $> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
 ```
   options   | description
-:-----------|------------:
+:-----------|:------------
  -w         | REQUIRED - project workspace
  -p         | REQUIRED - project name
  -m         | OPTIONAL - release mode, defined by build specific parameters  which may switch application behaviour for different build environments. Valid options are 'dev', 'qa', 'lt', or 'preprod'. 'dev' is selected if not specified.
