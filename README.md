@@ -4,7 +4,11 @@ icAnn (ICon ANNotation) is a generic script to annotate icons for different envi
 icAnn annotates release mode and app version number in colored header and footer
 sections of application icons.
 
----
+![Icon-72.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-72")
+![Icon-72@2x.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-72@2x")
+![Icon-76.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-76")
+![Icon-76@2x.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-76@2x")
+
 ##Usage Help
 ```
 $> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
@@ -28,11 +32,10 @@ $> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
 :--------------|:------------
    bau         | business as usual
    rel         | release
----
+
 ##Version
 0.0.1
 
----
 ##Requirements
 icAnn uses a number of open source projects to work properly:
 
@@ -45,10 +48,14 @@ I would recomment installing the dependencies using [Homebrew]:
 brew install imagemagick
 brew install ghostscript
 ```
----
+
 ##License
 *MIT*
 
 [ImageMagick]:http://www.imagemagick.org/
 [Ghostscript]:http://ghostscript.com/
 [Homebrew]:http://brew.sh/
+![Icon-76@2x][Icon-76@2x]
+![Icon-76][Icon-76]
+![Icon-72@2x][Icon-72@2x]
+![Icon-72][Icon-72]
