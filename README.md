@@ -4,10 +4,11 @@ icAnn (ICon ANNotation) is a generic script to annotate icons for different envi
 icAnn annotates release mode and app version number in colored header and footer
 sections of application icons.
 
-![Icon-72.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-72")
-![Icon-72@2x.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-72@2x")
-![Icon-76.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-76")
-![Icon-76@2x.png](https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png "Icon-76@2x")
+   Icon-72    |    Icon-76
+:------------:|:-------------:
+![Icon 72][Icon-72]|![Icon 76][Icon-76]
+![Icon 72@2x][Icon-72@2x]|![Icon 76@2x][Icon-76@2x]
+
 
 ##Usage Help
 ```
@@ -55,7 +56,7 @@ brew install ghostscript
 [ImageMagick]:http://www.imagemagick.org/
 [Ghostscript]:http://ghostscript.com/
 [Homebrew]:http://brew.sh/
-![Icon-76@2x][Icon-76@2x]
-![Icon-76][Icon-76]
-![Icon-72@2x][Icon-72@2x]
-![Icon-72][Icon-72]
+[Icon-76@2x]:https://raw.github.com/hadibadjian/icAnn/master/icAnn/Icons/Icon-76@2x.png?raw=true
+[Icon-76]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-76.png?raw=true
+[Icon-72@2x]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72@2x.png?raw=true
+[Icon-72]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png?raw=true
