@@ -51,7 +51,7 @@ brew install ghostscript
 ```
 
 ##License
-*MIT*
+*[The MIT License (MIT)]*
 
 [ImageMagick]:http://www.imagemagick.org/
 [Ghostscript]:http://ghostscript.com/
@@ -60,3 +60,4 @@ brew install ghostscript
 [Icon-76]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-76.png?raw=true
 [Icon-72@2x]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72@2X.png?raw=true
 [Icon-72]:https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png?raw=true
+[The MIT License (MIT)]:https://raw.github.com/hadibadjian/icAnn/master/LICENSE
