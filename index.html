@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Icann by hadibadjian</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Icann</h1>
+        <h2>iconAnnotate is a generic script to annotate iOS app icons for different build environments.</h2>
+        <a href="https://github.com/hadibadjian/icAnn" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="icann" class="anchor" href="#icann"><span class="octicon octicon-link"></span></a>icAnn</h1>
+
+<p>icAnn (ICon ANNotation) is a generic script to annotate icons for different environments. Although this script is designed specifically for iOS projects, it can be easily modified to be used for any other projects.</p>
+
+<p>icAnn annotates release mode and app version number in colored header and footer
+sections of application icons.</p>
+
+<table>
+<thead><tr>
+<th align="center">Icon-72</th>
+<th align="center">Icon-76</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72.png?raw=true" alt="Icon 72"></td>
+<td align="center"><img src="https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-76.png?raw=true" alt="Icon 76"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://github.com/hadibadjian/icAnn/blob/master/icAnn/Icons/Icon-72@2X.png?raw=true" alt="Icon 72@2x"></td>
+<td align="center"><img src="https://raw.github.com/hadibadjian/icAnn/master/icAnn/Icons/Icon-76@2x.png?raw=true" alt="Icon 76@2x"></td>
+</tr>
+</tbody>
+</table><h2>
+<a name="usage-help" class="anchor" href="#usage-help"><span class="octicon octicon-link"></span></a>Usage Help</h2>
+
+<pre><code>$&gt; sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
+</code></pre>
+
+<table>
+<thead><tr>
+<th align="left">options</th>
+<th align="left">description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">-w</td>
+<td align="left">REQUIRED - project workspace</td>
+</tr>
+<tr>
+<td align="left">-p</td>
+<td align="left">REQUIRED - project name</td>
+</tr>
+<tr>
+<td align="left">-m</td>
+<td align="left">OPTIONAL - release mode, defined by build specific parameters  which may switch application behaviour for different build environments. Valid options are 'dev', 'qa', 'lt', or 'preprod'. 'dev' is selected if not specified.</td>
+</tr>
+<tr>
+<td align="left">-r</td>
+<td align="left">OPTIONAL - revision mode, specifying which revision the build is for (i.e. normal development or specific branched off release build). Valid options are 'bau', rel'. 'bau' is selected if not specified.</td>
+</tr>
+</tbody>
+</table><h4>
+<a name="glossary" class="anchor" href="#glossary"><span class="octicon octicon-link"></span></a>Glossary:</h4>
+
+<table>
+<thead><tr>
+<th align="left">release_mode</th>
+<th align="left">description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">dev</td>
+<td align="left">development</td>
+</tr>
+<tr>
+<td align="left">qa</td>
+<td align="left">quality assurance</td>
+</tr>
+<tr>
+<td align="left">lt</td>
+<td align="left">load test</td>
+</tr>
+<tr>
+<td align="left">preprod</td>
+<td align="left">pre-production</td>
+</tr>
+</tbody>
+</table><table>
+<thead><tr>
+<th align="left">revision_mode</th>
+<th align="left">description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">bau</td>
+<td align="left">business as usual</td>
+</tr>
+<tr>
+<td align="left">rel</td>
+<td align="left">release</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="version" class="anchor" href="#version"><span class="octicon octicon-link"></span></a>Version</h2>
+
+<p>0.0.1</p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>icAnn uses a number of open source projects to work properly:</p>
+
+<ul>
+<li>
+<a href="http://www.imagemagick.org/">ImageMagick</a> - awesome web-based text editor</li>
+<li>
+<a href="http://ghostscript.com/">Ghostscript</a> - a super fast port of Markdown to JavaScript</li>
+</ul><h4>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<p>I would recomment installing the dependencies using <a href="http://brew.sh/">Homebrew</a>:</p>
+
+<div class="highlight highlight-sh"><pre>brew install imagemagick
+brew install ghostscript
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><em><a href="https://raw.github.com/hadibadjian/icAnn/master/LICENSE">The MIT License (MIT)</a></em></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/hadibadjian/icAnn/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/hadibadjian/icAnn/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/hadibadjian/icAnn"></a> is maintained by <a href="https://github.com/hadibadjian">hadibadjian</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
