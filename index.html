@@ -31,7 +31,7 @@
           <h1>
 <a name="icann" class="anchor" href="#icann"><span class="octicon octicon-link"></span></a>icAnn</h1>
 
-<p>icAnn (ICon ANNotation) is a generic script to annotate icons for different environments. Although this script is designed specifically for iOS projects, it can be easily modified to be used for any other projects.</p>
+<p>icAnn (ICon ANNotation) is a generic script to annotate icons for different environments. It does not have any dependencies on a specific platform.</p>
 
 <p>icAnn annotates release mode and app version number in colored header and footer
 sections of application icons.</p>
@@ -54,7 +54,7 @@ sections of application icons.</p>
 </table><h2>
 <a name="usage-help" class="anchor" href="#usage-help"><span class="octicon octicon-link"></span></a>Usage Help</h2>
 
-<pre><code>$&gt; sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
+<pre><code>$&gt; sh icAnn.sh -w /Users/hadibadjian/Documents/projects/github/icAnn/icAnn/Icons -v 0.0.2 -m
 </code></pre>
 
 <table>
@@ -124,7 +124,7 @@ sections of application icons.</p>
 </table><h2>
 <a name="version" class="anchor" href="#version"><span class="octicon octicon-link"></span></a>Version</h2>
 
-<p>0.0.1</p>
+<p>0.0.2</p>
 
 <h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
@@ -141,9 +141,9 @@ sections of application icons.</p>
 
 <p>I would recomment installing the dependencies using <a href="http://brew.sh/">Homebrew</a>:</p>
 
-<div class="highlight highlight-sh"><pre>brew install imagemagick
-brew install ghostscript
-</pre></div>
+<pre><code>$&gt; brew install imagemagick
+$&gt; brew install ghostscript
+</code></pre>
 
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
