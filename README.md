@@ -1,5 +1,5 @@
 #icAnn
-icAnn (ICon ANNotation) is a generic script to annotate icons for different environments. Although this script is designed specifically for iOS projects, it can be easily modified to be used for any other projects.
+icAnn (ICon ANNotation) is a generic script to annotate icons for different environments. It does not have any dependencies on a specific platform.
 
 icAnn annotates release mode and app version number in colored header and footer
 sections of application icons.
@@ -12,7 +12,7 @@ sections of application icons.
 
 ##Usage Help
 ```
-$> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
+$> sh icAnn.sh -w /Users/hadibadjian/Documents/projects/github/icAnn/icAnn/Icons -v 0.0.2 -m
 ```
   options   | description
 :-----------|:------------
@@ -35,7 +35,7 @@ $> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
    rel         | release
 
 ##Version
-0.0.1
+0.0.2
 
 ##Requirements
 icAnn uses a number of open source projects to work properly:
@@ -45,9 +45,9 @@ icAnn uses a number of open source projects to work properly:
 
 ####Installation
 I would recomment installing the dependencies using [Homebrew]:
-```sh
-brew install imagemagick
-brew install ghostscript
+```
+$> brew install imagemagick
+$> brew install ghostscript
 ```
 
 ##License

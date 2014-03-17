@@ -6,10 +6,11 @@ iconAnnotate is a generic script to annotate icons for different environments.
 It annotates release mode and app version number in colored header and footer
 sections of application icons.
 
+Icons MUST be contained in their isolated folder.
 
 OPTIONS:
-   -w=<workspace>       REQUIRED - project workspace
-   -p=<project_name>    REQUIRED - project name
+   -w=<workspace>       REQUIRED - icons file path
+   -v=<version number>  OPTIONAL - version number
    -m=<release_mode>    OPTIONAL - release mode 
                         build specific parameters which may switch application 
                         behaviour for different build environments
@@ -33,10 +34,10 @@ Glossary:
    rel     release
 ";
 
-while getopts "w:p:m:r:h" opt; do
+while getopts "w:v:m:r:h" opt; do
 case "$opt" in
 	w) pWorkspace=$OPTARG ;;
-    p) projectName=$OPTARG ;;
+	v) version=$OPTARG ;;
     m) mode=$OPTARG ;;
 	r) revision=$OPTARG ;;
     h) echo "$helpString"; exit 1 ;;
@@ -46,19 +47,14 @@ exit 1 ;;
 esac
 done
 
-if [[ "$pWorkspace" == "" || "$projectName" == "" ]]; then
+if [ "$pWorkspace" == "" ]; then
 echo "$helpString"; exit 1;
 fi
 
-if [[ ! -f ${pWorkspace}/${projectName}/${projectName}-Info.plist ]]; then
-	echo "could not retrieve application version!\nPlease place the plist file at $pWorkspace/$projectName/$projectName-Info.plist";
+if [ "$version" == "" ]; then
+	echo "could not retrieve application version!\nUsing 0.0.0";
 	version="0.0.0";
-else
-	shortVersion=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' $pWorkspace/$projectName/$projectName-Info.plist)
-	bundleVersion=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' $pWorkspace/$projectName/$projectName-Info.plist)
-	version=${shortVersion}.${bundleVersion}
 fi
-echo "app version: $version";
 
 # associating different colors to different environment builds
 if [ "$mode" == "qa" ]; then
@@ -86,7 +82,7 @@ fi
 echo "app mode: $mode";
 
 # application icons location
-FILES=${pWorkspace}/${projectName}/Icons/*.png
+FILES=${pWorkspace}/*.png
 echo "    ${FILES}"
 shopt -s nullglob
 for image in ${FILES}; do
