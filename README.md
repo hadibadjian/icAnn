@@ -12,7 +12,7 @@ sections of application icons.
 
 ##Usage Help
 ```
-$> sh iconAnnotate.sh -w /Users/hadibadjian/projects/icAnn -p icAnn -m qa
+$> sh icAnn.sh -w /Users/hadibadjian/Documents/projects/github/icAnn/icAnn/Icons -v 0.0.2 -m
 ```
   options   | description
 :-----------|:------------
@@ -45,9 +45,9 @@ icAnn uses a number of open source projects to work properly:
 
 ####Installation
 I would recomment installing the dependencies using [Homebrew]:
-```sh
-brew install imagemagick
-brew install ghostscript
+```
+$> brew install imagemagick
+$> brew install ghostscript
 ```
 
 ##License
