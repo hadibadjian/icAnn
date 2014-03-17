@@ -16,8 +16,8 @@ $> sh icAnn.sh -w /Users/hadibadjian/Documents/projects/github/icAnn/icAnn/Icons
 ```
   options   | description
 :-----------|:------------
- -w         | REQUIRED - project workspace
- -p         | REQUIRED - project name
+ -w         | REQUIRED - icons file path
+ -v         | REQUIRED - version number
  -m         | OPTIONAL - release mode, defined by build specific parameters  which may switch application behaviour for different build environments. Valid options are 'dev', 'qa', 'lt', or 'preprod'. 'dev' is selected if not specified.
  -r         | OPTIONAL - revision mode, specifying which revision the build is for (i.e. normal development or specific branched off release build). Valid options are 'bau', rel'. 'bau' is selected if not specified.
 
